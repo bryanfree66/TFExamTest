@@ -24,7 +24,7 @@ def print_dict(json_dict, items=5):
 def main():
     # Download the data
     url = 'https://www.ncei.noaa.gov/access/monitoring/climate-at-a-glance/national/time-series/110/pcp/12/12/1895-2016.json?base_prd=true&begbaseyear=1901&endbaseyear=2000'
-    data_path = 'C:\\Users\\bryan\\local_code\\TFExamTest\\data'
+    data_path = '/data'
     filename = f'{data_path}\\climate.json'
     retrieve_url(url, filename)
 
