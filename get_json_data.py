@@ -41,6 +41,7 @@ def main():
     print(f'JSON keys: {json_from_string.keys()}')
     print_dict(json_from_string['data'])
 
+    # work with raw strings
     precip_raw = json_from_string['data']
     precipitation = [(x, float(precip_raw[x]['value'])) for x in precip_raw]
     print(precipitation[:5])
